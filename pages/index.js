@@ -1,5 +1,8 @@
 'use strict'
 
 export default () => (
-  <h1>Hello, dashboard</h1>
+  <div>
+    <h1>Hello, dashboard!</h1>
+    <img src="/static/images/highestoffives.gif" />
+  </div>
 )
