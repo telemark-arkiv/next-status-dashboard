@@ -1,5 +1,6 @@
 'use strict'
 
+import React from 'react'
 import 'isomorphic-fetch'
 import Queue from '../components/queue'
 
@@ -13,15 +14,13 @@ export default class Index extends React.Component {
     }
   }
 
-
   render () {
-
     return (
       <div>
-      <h1>Hello, dashboard!</h1>
-      <img src='/static/images/highestoffives.gif' />
-      <Queue queue={this.props.queue} />
-    </div>
+        <h1>Hello, dashboard!</h1>
+        <img src='/static/images/highestoffives.gif' />
+        <Queue queue={this.props.queue} />
+      </div>
     )
   }
 }

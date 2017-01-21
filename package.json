@@ -23,7 +23,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "now-deploy": "npm test && now && now alias"
+    "now-deploy": "now && now alias"
   },
   "keywords": [
     "dashboard",
