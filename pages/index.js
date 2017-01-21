@@ -13,8 +13,9 @@ export default class Index extends React.Component {
   render () {
     return (
       <div>
-        <h1>Status</h1>
+        <h1>Statusoversikt</h1>
         <Status title="Køer" data={this.props.queue} />
+        <Status title="Antall" data={this.props.antall} />
       </div>
     )
   }
