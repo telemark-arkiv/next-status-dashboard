@@ -2,11 +2,18 @@
 
 import React from 'react'
 
-export default class extends React.Component {
-
+export default class Queue extends React.Component {
   render () {
-    return <div>
-      I am the queue
+    return (
+      <div>
+      <ul>
+        {this.props.queue.map((line) => {
+          return (
+            <li> {line.name}: {line.queue}</li>
+          )
+        })}
+      </ul>
     </div>
+    )
   }
 }

@@ -1,8 +1,9 @@
 {
   "name": "next-status-dashboard",
-  "description": "echo microservice",
+  "description": "Dashboard for statuses",
   "version": "1.0.1",
   "license": "MIT",
+  "private": true,
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no",
@@ -27,6 +28,7 @@
   "keywords": [
     "dashboard",
     "next",
+    "status",
     "Telemark fylkeskommune"
   ],
   "repository": {
@@ -37,7 +39,10 @@
     "url": "http://github.com/telemark/next-status-dashboard/issues"
   },
   "now": {
-    "alias": "dashboard.status.tfk.allthethings.win"
+    "alias": "dashboard.status.t-fk.win"
+  },
+  "greenkeeper": {
+    "emails": false
   },
   "devDependencies": {
     "coveralls": "2.11.15",
@@ -46,6 +51,7 @@
     "tap": "9.0.3"
   },
   "dependencies": {
+    "isomorphic-fetch": "2.2.1",
     "next": "1.2.3"
   }
 }
