@@ -5,6 +5,9 @@
 # OS X
 .DS_Store
 
+# Next
+.next
+
 # Logs
 logs
 *.log

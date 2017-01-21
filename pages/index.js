@@ -1,25 +1,20 @@
 'use strict'
 
 import React from 'react'
-import 'isomorphic-fetch'
-import Queue from '../components/queue'
+import collectData from '../lib/collect-data'
+import Status from '../components/status'
 
 export default class Index extends React.Component {
   static async getInitialProps (req) {
-    const queueUrl = 'https://queue.status.tfk.allthethings.win/?format=json'
-    const queueRes = await fetch(queueUrl)
-    const queue = await queueRes.json()
-    return {
-      queue: queue || []
-    }
+    const data = await collectData()
+    return data
   }
 
   render () {
     return (
       <div>
-        <h1>Hello, dashboard!</h1>
-        <img src='/static/images/highestoffives.gif' />
-        <Queue queue={this.props.queue} />
+        <h1>Status</h1>
+        <Status title="Køer" data={this.props.queue} />
       </div>
     )
   }
