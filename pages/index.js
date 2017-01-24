@@ -10,8 +10,8 @@ export default class Index extends React.Component {
     return (
       <div>
         <h1>Statusoversikt</h1>
-        <Timer title='Timer spart' source='https://cors.allthethings.win/https://timer.status.t-fk.win/json' />
-        <Status title='Køer' source='https://cors.allthethings.win/https://queue.status.t-fk.win/json' />
+        <Timer title='Timer spart' source='https://timer.status.t-fk.win/json' />
+        <Status title='Køer' source='https://queue.status.t-fk.win/json' />
         <Status title='Antall' source='https://antall.status.t-fk.win/json' />
       </div>
     )
