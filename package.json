@@ -1,7 +1,7 @@
 {
   "name": "next-status-dashboard",
   "description": "Dashboard for statuses",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "private": true,
   "author": {
@@ -23,7 +23,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "now-deploy": "now && now alias"
+    "now-deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
     "dashboard",
