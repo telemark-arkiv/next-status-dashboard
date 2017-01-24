@@ -12,7 +12,7 @@ export default class Index extends React.Component {
         <h1>Statusoversikt</h1>
         <Timer title='Timer spart' source='https://cors.allthethings.win/https://timer.status.t-fk.win/json' />
         <Status title='Køer' source='https://cors.allthethings.win/https://queue.status.t-fk.win/json' />
-        <Status title='Antall' source='https://cors.allthethings.win/https://antall.status.t-fk.win/json' />
+        <Status title='Antall' source='https://antall.status.t-fk.win/json' />
       </div>
     )
   }
