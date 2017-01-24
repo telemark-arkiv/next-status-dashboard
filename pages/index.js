@@ -13,6 +13,7 @@ export default class Index extends React.Component {
         <Timer title='Timer spart' source='https://timer.status.t-fk.win/json' />
         <Status title='Køer' source='https://queue.status.t-fk.win/json' />
         <Status title='Antall' source='https://antall.status.t-fk.win/json' />
+        <Status title='RAMBO' source='https://vigo.saksbehandling.status.t-fk.win/json' />
       </div>
     )
   }
