@@ -22,7 +22,7 @@
     "standard-fix": "standard --fix",
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production next start",
     "now-deploy": "npm test && now --npm && now alias"
   },
   "keywords": [
