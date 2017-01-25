@@ -28,8 +28,17 @@ export default class Index extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col md='4'>
-              <Status title='vigo' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+            <Col md='3'>
+              <Status title='rambo' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+            </Col>
+            <Col md='3'>
+              <Status title='minelev' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+            </Col>
+            <Col md='3'>
+              <Status title='skoleskyss' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+            </Col>
+            <Col md='3'>
+              <Status title='tilskudd' source='https://vigo.saksbehandling.status.t-fk.win/json' />
             </Col>
           </Row>
         </Container>
