@@ -1,7 +1,7 @@
 {
   "name": "next-status-dashboard",
   "description": "Dashboard for statuses",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "private": true,
   "author": {
@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "isomorphic-fetch": "2.2.1",
+    "muicss": "0.9.9-rc2",
     "next": "1.2.3"
   }
 }
