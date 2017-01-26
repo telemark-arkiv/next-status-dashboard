@@ -25,23 +25,25 @@ export default class Index extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col md='2'>
+            <Col md='6'>
               <Status title='Køer' source='https://queue.status.t-fk.win/json' />
             </Col>
-            <Col md='2'>
+            <Col md='6'>
+              <Status title='SvarUT' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+            </Col>
+          </Row>
+          <Row>
+            <Col md='3'>
               <Status title='rambo' source='https://vigo.saksbehandling.status.t-fk.win/json' />
             </Col>
-            <Col md='2'>
-              <Status title='minelev' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+            <Col md='3'>
+              <Status title='MinElev' source='https://minelev.saksbehandling.status.t-fk.win/json' />
             </Col>
-            <Col md='2'>
-              <Status title='skoleskyss' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+            <Col md='3'>
+              <Status title='Skoleskyss' source='https://skoleskyss.saksbehandling.status.t-fk.win/json' />
             </Col>
-            <Col md='2'>
+            <Col md='3'>
               <Status title='tilskudd' source='https://vigo.saksbehandling.status.t-fk.win/json' />
-            </Col>
-            <Col md='2'>
-              <Status title='SvarUT' source='https://vigo.saksbehandling.status.t-fk.win/json' />
             </Col>
           </Row>
         </Container>
