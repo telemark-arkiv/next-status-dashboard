@@ -34,7 +34,7 @@ export default class Index extends React.Component {
           </Row>
           <Row>
             <Col md='3'>
-              <Status title='rambo' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+              <Status title='Rambo' source='https://vigo.saksbehandling.status.t-fk.win/json' />
             </Col>
             <Col md='3'>
               <Status title='MinElev' source='https://minelev.saksbehandling.status.t-fk.win/json' />
@@ -43,7 +43,7 @@ export default class Index extends React.Component {
               <Status title='Skoleskyss' source='https://skoleskyss.saksbehandling.status.t-fk.win/json' />
             </Col>
             <Col md='3'>
-              <Status title='tilskudd' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+              <Status title='Tilskudd' source='https://tilskudd.saksbehandling.status.t-fk.win/json' />
             </Col>
           </Row>
         </Container>
