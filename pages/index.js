@@ -15,7 +15,7 @@ export default class Index extends React.Component {
       <div>
         <Head />
         <Container fluid>
-          <h1 className='mui--text-display3'>Statusoversikt</h1>
+          <h1 className='mui--text-title'>Dashboard digitalisering</h1>
           <Row>
             <Col md='6'>
               <Timer title='Timer spart' source='https://timer.status.t-fk.win/json' />
@@ -29,7 +29,7 @@ export default class Index extends React.Component {
               <Status title='Køer' source='https://queue.status.t-fk.win/json' />
             </Col>
             <Col md='6'>
-              <Status title='SvarUT' source='https://vigo.saksbehandling.status.t-fk.win/json' />
+              <Status title='SvarUt' source='https://svarut.distribusjon.status.t-fk.win/json' />
             </Col>
           </Row>
           <Row>
