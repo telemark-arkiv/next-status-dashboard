@@ -1,7 +1,7 @@
 {
   "name": "next-status-dashboard",
   "description": "Dashboard for statuses",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "private": true,
   "author": {
@@ -22,7 +22,7 @@
     "dev": "next",
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production next start",
-    "now-deploy": "npm test && now --npm && now alias"
+    "now-deploy": "npm test && now --npm --alias"
   },
   "keywords": [
     "dashboard",
@@ -32,25 +32,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/next-status-dashboard.git"
+    "url": "https://github.com/telemark/next-status-dashboard.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/next-status-dashboard/issues"
+    "url": "https://github.com/telemark/next-status-dashboard/issues"
   },
   "now": {
-    "alias": "dashboard.status.t-fk.win",
+    "aliases": [
+      "dashboard.status.t-fk.win"
+    ],
     "env": {
       "NODE_ENV": "production"
     }
-  },
-  "greenkeeper": {
-    "emails": false
   },
   "devDependencies": {
     "coveralls": "2.11.15",
     "nsp": "2.6.2",
     "standard": "8.6.0",
-    "tap": "9.0.3"
+    "tap": "10.0.0"
   },
   "dependencies": {
     "isomorphic-fetch": "2.2.1",
