@@ -1,5 +1,6 @@
 'use strict'
 
+const urls = require('../config/urls')
 import React from 'react'
 import Container from 'muicss/lib/react/container'
 import Row from 'muicss/lib/react/row'
@@ -15,7 +16,7 @@ export default class Index extends React.Component {
       <div>
         <Head />
         <Container fluid>
-          <h1 className='mui--text-title'>Dashboard digitalisering</h1>
+          <h1 className='mui--text-title'>Digitalisering</h1>
           <Row>
             <Col md='6'>
               <Timer title='Timer spart' source='https://timer.status.t-fk.win/json' />
@@ -29,7 +30,7 @@ export default class Index extends React.Component {
               <Status title='Køer' source='https://queue.status.t-fk.win/json' />
             </Col>
             <Col md='6'>
-              <Status title='SvarUt' source='https://svarut.distribusjon.status.t-fk.win/json' />
+              <Status title='SvarUt' source={urls.svarUt} />
             </Col>
           </Row>
           <Row>
