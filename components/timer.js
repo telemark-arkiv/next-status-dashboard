@@ -17,7 +17,7 @@ export default class Status extends React.Component {
   async componentDidMount () {
     const data = await getData(this.props.source)
     this.setState({data: data})
-    this.timer = setInterval(this.tick, 1000)
+    this.timer = setInterval(this.tick, 1 * 100 * 60)
   }
 
   async tick () {
