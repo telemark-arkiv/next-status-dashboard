@@ -17,7 +17,7 @@ export default class Status extends React.Component {
   async componentDidMount () {
     const data = await getData(this.props.source)
     this.setState({data: data})
-    this.timer = setInterval(this.tick, 1 * 100 * 60)
+    this.timer = setInterval(this.tick, parseInt(this.props.refresh || '1', 10) * 1000 * 60)
   }
 
   async tick () {
@@ -32,7 +32,7 @@ export default class Status extends React.Component {
         <ul className='mui-list--unstyled'>
           {this.state.data.map((line) => {
             return (
-              <li className='mui--text-display1'>{line.name}: {line.status}</li>
+              <li className='mui--text-display4'>{line.status}</li>
             )
           })}
         </ul>
