@@ -1,4 +1,6 @@
 # next-status-dashboard
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/next-status-dashboard.svg)](https://greenkeeper.io/)
 Tester next.js som kilde til dashboard
 
 ## License
