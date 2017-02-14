@@ -19,32 +19,32 @@ export default class Index extends React.Component {
           <h1 className='mui--text-title'>Digitalisering</h1>
           <Row>
             <Col md='6'>
-              <Timer title='Timer spart' source='https://timer.status.t-fk.win/json' />
+              <Timer title='Timer spart' source='https://timer.status.t-fk.win/json' refresh='10' />
             </Col>
             <Col md='6'>
-              <Status title='Antall' source='https://antall.status.t-fk.win/json' />
+              <Status title='Antall' source='https://antall.status.t-fk.win/json' refresh='10' />
             </Col>
           </Row>
           <Row>
             <Col md='6'>
-              <Status title='Køer' source='https://queue.status.t-fk.win/json' />
+              <Status title='Køer' source='https://queue.status.t-fk.win/json' refresh='10' />
             </Col>
             <Col md='6'>
-              <Status title='SvarUt' source={urls.svarUt} />
+              <Status title='SvarUt' source={urls.svarUt} refresh='10' />
             </Col>
           </Row>
           <Row>
             <Col md='3'>
-              <Status title='Rambo' source={urls.saksbehandlingVigo} />
+              <Status title='Rambo' source={urls.saksbehandlingVigo} refresh='10' />
             </Col>
             <Col md='3'>
-              <Status title='MinElev' source={urls.saksbehandlingMinelev} />
+              <Status title='MinElev' source={urls.saksbehandlingMinelev} refresh='10' />
             </Col>
             <Col md='3'>
-              <Status title='Skoleskyss' source={urls.saksbehandlingSkoleskyss} />
+              <Status title='Skoleskyss' source={urls.saksbehandlingSkoleskyss} refresh='10' />
             </Col>
             <Col md='3'>
-              <Status title='Tilskudd' source={urls.saksbehandlingTilskudd} />
+              <Status title='Tilskudd' source={urls.saksbehandlingTilskudd} refresh='10' />
             </Col>
           </Row>
         </Container>
