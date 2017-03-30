@@ -10,7 +10,6 @@ import Status from '../components/status'
 import Timer from '../components/timer'
 
 export default class Index extends React.Component {
-
   render () {
     return (
       <div>

@@ -1,7 +1,7 @@
 {
   "name": "next-status-dashboard",
   "description": "Dashboard for statuses",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "private": true,
   "author": {
@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=7.5.0"
+    "node": ">=7.8.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -22,7 +22,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "now-deploy": "npm test && now alias"
+    "now-deploy": "npm test && now && now alias"
   },
   "keywords": [
     "dashboard",
@@ -37,23 +37,27 @@
   "bugs": {
     "url": "https://github.com/telemark/next-status-dashboard/issues"
   },
+  "homepage": "https://github.com/telemark/next-status-dashboard",
   "now": {
     "alias": [
       "dashboard.next.t-fk.no"
     ],
     "env": {
       "NODE_ENV": "production"
-    }
+    },
+    "type": "npm"
   },
   "devDependencies": {
-    "coveralls": "2.11.16",
-    "nsp": "2.6.2",
-    "standard": "8.6.0",
-    "tap": "10.2.0"
+    "coveralls": "2.12.0",
+    "nsp": "2.6.3",
+    "standard": "9.0.2",
+    "tap": "10.3.1"
   },
   "dependencies": {
     "isomorphic-fetch": "2.2.1",
-    "muicss": "0.9.9-rc2",
-    "next": "1.2.3"
+    "muicss": "0.9.12",
+    "next": "2.0.0",
+    "react": "15.4.2",
+    "react-dom": "15.4.2"
   }
 }
