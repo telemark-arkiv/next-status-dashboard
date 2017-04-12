@@ -1,7 +1,7 @@
 {
   "name": "next-status-dashboard",
   "description": "Dashboard for statuses",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "license": "MIT",
   "private": true,
   "author": {
@@ -58,6 +58,6 @@
     "muicss": "0.9.15",
     "next": "2.0.1",
     "react": "15.5.4",
-    "react-dom": "15.4.2"
+    "react-dom": "15.5.4"
   }
 }
