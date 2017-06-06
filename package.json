@@ -1,7 +1,7 @@
 {
   "name": "next-status-dashboard",
   "description": "Dashboard for statuses",
-  "version": "1.3.10",
+  "version": "1.3.11",
   "license": "MIT",
   "private": true,
   "author": {
